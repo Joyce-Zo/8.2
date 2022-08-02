@@ -1,0 +1,123 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int line = 0;
+int main()
+{
+	printf("ahalo %d\n", line);
+	line++;
+	main();
+	return 0;
+}
+
+
+
+
+
+//#include "Add.h"
+//// 实际用法：写一个函数，声明 放头文件里，定义 放源文件里，然后在我们代码里写上 #include" 头文件"
+//int main()    
+//{                          
+//	int a, b, sum;
+//	scanf("%d%d", &a, &b);
+//	//  函数的调用
+//	sum = Add(a, b);
+//	printf("%d", sum);
+//
+//	return 0;
+//}
+
+
+
+//  函数的声明
+//int Add(int, int);
+////  int Add(int a,int b);   如果函数定义在下，则上方需要有函数的声明
+//
+//int main()
+//{
+//	int a, b, sum;
+//	scanf("%d%d", &a, &b);
+//	//  函数的调用
+//	sum = Add(a, b);
+//	printf("%d", sum);
+//
+//	return 0;
+//}
+////函数的定义
+//int Add(int a, int b)
+//{
+//	int z = 0;
+//	return (z = a + b);
+//}
+
+
+////  函数的声明
+//int Add(int, int);
+////  int Add(int a,int b);   如果函数定义在下，则上方需要有函数的声明
+//
+//int main()
+//{
+//	int a, b, sum;
+//	scanf("%d%d", &a, &b);
+//	//  函数的调用
+//	sum = Add(a, b);
+//	printf("%d", sum);
+//
+//	return 0;
+//}
+////函数的定义
+//int Add(int a, int b)
+//{
+//	int z = 0;
+//	return (z = a + b);
+//}
+
+////  函数的定义
+//int Add(int a, int b)
+//{
+//	int z = 0;
+//	return (z = a + b);
+//}
+//                                     一般情况下
+//int main()
+//{
+//	int a, b,sum;
+//	scanf("%d%d",&a,&b);
+//	//  函数的调用
+//	sum = Add(a, b);
+//	printf("%d", sum);
+//
+//	return 0;
+//}
+
+
+
+
+////     函数的 链式访问
+//int main()
+//{     //   printf 返回值 是 字符 的个数
+//	printf("%d\n", printf("%d\n", printf("%d\n", 43))); // 后面 2个字符，中间1个字符，加起来 43 2 1
+//	//printf("%d\n", printf("%d", 43));
+//	//printf("%d\n", 43);
+//	return 0;
+//}
+
+
+//     函数的  嵌套调用
+//void new_line()
+//{
+//	printf(" I love you.");    
+//}
+//void n_line(int i,int j)
+//{
+//	for (i; i < j; i++);
+//	new_line();
+//}
+//int main()
+//{
+//	int i, j;
+//	scanf("%d%d", &i, &j);
+//	n_line(i, j);
+//	printf("%s",j);
+//	return 0;
+//}
